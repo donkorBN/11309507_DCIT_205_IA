@@ -1,0 +1,97 @@
+section {
+	padding: 50px 0;
+    margin: 100px 100px;
+    border-radius: 14px;
+}
+
+#contact {
+	background-color: #f2f2f2;
+}
+
+p, h1, h2, h3, label{
+    margin: 5px 10px;;
+}
+
+.submit{
+    margin-left: 5px;
+    color:blue;
+}
+
+.submit:hover{
+    margin-left: 5px;
+    color:rgb(0, 0, 0);
+    background-color: #2703f1;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+form input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#info {
+	background-color: #333;
+	color: #fff;
+}
+
+#info h3 {
+	margin-top: 0;
+}
+
+#info p {
+	margin-bottom: 0;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	flex: 1;
+	padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		display: none;
+	}
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav a {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.container {
+		padding: 0 10px;
+	}
+	.row {
+		flex-direction: column;
+	}
+	.col {
+		flex: none;
+	}
+}
