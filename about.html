@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | UG Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* General Styles */
 body {
@@ -74,7 +75,6 @@ header {
   color: #666;
 }
 
-/* Awards Section Styles */
 .awards-container {
   max-width: 800px;
   margin: 20px auto;
@@ -102,8 +102,40 @@ header {
   line-height: 1.6;
 }
 
-/* Footer Styles */
-/* Footer Styles */
+.student-hero{
+  max-width: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets/about-hero.jpg);
+    height: 20vh;
+    margin: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text-students{
+  margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #f7f7f7;
+    margin:50px;
+    transform: translate(-2%, 100%);
+}
+
+.hero-text-students{
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #f7f7f7;
+    margin:50px;
+    transform: translate(-2%, 100%);
+}
+
+
 .footer-clean {
   padding: 20px 0;
   background-color: #f7f7f7;
@@ -179,12 +211,17 @@ header {
                 <a href="contact.html"><li>Contact</li></a>
                 <a href="admissions.html"><li>Admissions</li></a>
                 <a href="academics.html"><li>Academics</li></a>
-                <a href="students.html"><li>Students</li></a>
+                <a href="student.html"><li>Students</li></a>
                 <a href="staff.html"><li>Staff</li></a>
             </ul>
         </nav>
         <a href="cta.htm"><button class="start">Apply</button></a>
     </header>
+
+    <section class="student-hero">
+      <p class="hero-text-students">About Us</p>
+      <h1 class="hero-text-students">See What Our Students Say About Our Program</h1>
+  </section>
 
     <section class="about">
         <div class="about-container">
@@ -240,7 +277,12 @@ header {
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
                     </div>
+
+
                 </div>
             </div>
         </footer>

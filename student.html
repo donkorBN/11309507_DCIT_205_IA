@@ -7,6 +7,36 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 90%;
+    padding: 30px 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  .logo {
+    width: 30%;
+  }
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    visibility:hidden ;
+  }
+  .nav_links a {
+    margin: 10px 0;
+  }
+  .nav_links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: none;
+  }
+} 
+
     .testimonials {
   max-width: 800px;
   margin: 20px auto;
@@ -54,14 +84,16 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .footer-column {
-  flex: 0 0 30%;
+  flex: 0 0 25%;
+  gap: 10;
 }
 
 footer i{
@@ -74,29 +106,106 @@ footer a{
 }
 
 .footer-column h3 {
-    
+   position: relative; 
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .footer-column ul {
   list-style-type: none;
   padding: 0;
   color: #f7f7f7;
+  
+}
+
+footer p{
+  margin-bottom: 10px;
+}
+
+footer img{
+  margin-top: 17px;
+  width:80%;
+  height: 5vh;
+  background-color: #f7f7f7;
 }
 
 .footer-column li {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: #f7f7f7;
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.social-icons a {
-  color: #fff;
+.social-icons {
+  color: #e9e9e9;
   font-size: 24px;
   margin-right: 10px;
+  height: 10vh;
+  width: 100%;
 }
+
+.student-hero{
+  max-width: 800px;
+  margin: 20px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets/student-hero.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text-students{
+  margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #f7f7f7;
+    margin:50px;
+    transform: translate(-2%, 100%);
+}
+
+.hero-text-students{
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #f7f7f7;
+    margin:50px;
+    transform: translate(-2%, 100%);
+}
+
+.left{
+  text-align: right;
+  margin-right:65px;
+}
+
+.input{
+  display: inline;
+  margin: 20px auto;
+  height: 5vh;
+  width: 100%;
+  outline:none;
+}
+
+label{
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
   </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
 </head>
 <body>
   <header>
@@ -117,6 +226,11 @@ footer a{
 
         <a href="admissions.html"><button class="start">Apply</button></a>
   </header>
+
+  <section class="student-hero">
+      <p class="hero-text-students">Students</p>
+      <h1 class="hero-text-students">See What Our Students Say About Our Program</h1>
+  </section>
 
   <section class="testimonials">
     <h2>Student Testimonials</h2>
@@ -172,26 +286,48 @@ footer a{
       <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.htm">Programs</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="about.html">Full Curriculum</a></li>
+          <li><a href="about.html">Course Outline</a></li>
+          <li><a href="contact.css">Contact</a></li>
+          <img src="assets/comScience_logo.png" alt="logo">
         </ul>
       </div>
       <div class="footer-column">
         <h3>Contact Us</h3>
-        <p>Email: info@computerscienceschool.com</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Address: 123 School Street, City, Country</p>
+        <p>Email: info@ddcs.ug.edu.gh</p>
+        <p>Phone: 55 54 43534</p>
+        <p>Address: 123 Atomic Street, Haatso, Accra</p>
+
+        <label> Got anything to tell us?
+          <input placeholder="Enter your e-mail here" type="email" class="input">
+        </label>
       </div>
       <div class="footer-column">
         <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
+        <div class="col-lg-3 item social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="www.google.com" target="_blank"><i class="fab fa-google"></i></a>
+      </div>
+
+      <div class="footer-column">
+        <h3>More Info</h3>
+        <ul class="left">
+          <li><a href="#">Course Advisors</a></li>
+          <li><a href="#">Mentors</a></li>
+          <li><a href="#">Staff Profiles</a></li>
+          <li><a href="#">Notable Achievements</a></li>
+        </ul>
+      </div>
+
       </div>
     </div>
   </footer>
